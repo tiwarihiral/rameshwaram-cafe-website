@@ -151,90 +151,246 @@
     }
 
 /* ===== Hero Section ===== */
-.hero {
-    height: 100vh;
-    background: url('../assets/cafe-bg.jpg') no-repeat center/cover;
+/* Quad Container */
+.quad-container {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 80px;
-}
-
-.hero-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.4);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    padding: 0 20px;
-}
-
-.hero h1, .hero h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem;
-    color: var(--gold);
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-    line-height: 1.2;
-}
-
-.subtitle {
-    font-size: 1.8rem;
-    color: white;
-    margin-bottom: 1rem;
-    font-style: italic;
-    font-weight: 300;
-}
-
-.tagline {
-    font-size: 1.2rem;
-    color: white;
-    margin-bottom: 2.5rem;
-    letter-spacing: 1px;
-}
-
-.btn {
-    background: linear-gradient(to right, var(--deep-red), #B22222);
-    color: white;
-    padding: 15px 40px;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    display: inline-block;
-    border: none;
-    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 140px auto 40px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(154, 31, 26, 0.4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(154, 31, 26, 0.6);
-}
-
-.btn:after {
-    content: '';
+/* Full Image Display - Set default image here too */
+.full-image-display {
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: 0.5s;
+    background-image: url('assets/cafe-bg-1.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: background-image 0.5s ease;
 }
 
-.btn:hover:after {
-    left: 100%;
+/* Updated Welcome Overlay Styles */
+.welcome-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    animation: fadeIn 1.5s ease-out;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    pointer-events: none; /* Allows hovering through to quadrants */
+}
+
+.quad-box:hover ~ .welcome-overlay,
+.quad-container:hover .welcome-overlay:not(:hover) {
+    opacity: 0;
+}
+
+/* Rest of your existing styles remain unchanged */
+.welcome-text {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+.welcome-line {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    animation: slideUp 1s ease-out;
+}
+
+.restaurant-name {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--gold);
+    animation: scaleIn 1s ease-out;
+}
+
+.south-indian-motif {
+    width: 150px;
+    height: 8px;
+    background: var(--gold);
+    margin: 0 auto;
+    position: relative;
+    animation: expand 1.5s ease-out;
+}
+
+.south-indian-motif::before,
+.south-indian-motif::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: url('assets/kolam-pattern.png') no-repeat center/contain;
+    transform: translateY(-50%);
+}
+
+.south-indian-motif::before {
+    left: -30px;
+}
+
+.south-indian-motif::after {
+    right: -30px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from { 
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to { 
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes expand {
+    from { width: 0; opacity: 0; }
+    to { width: 150px; opacity: 1; }
+}
+
+/* Responsive adjustments - Fixed typo in class name */
+@media (max-width: 768px) {
+    .welcome-line {
+        font-size: 1.8rem;
+    }
+    .restaurant-name {
+        font-size: 3rem;
+    }
+    .south-indian-motif { /* Fixed typo here (was 'south-indian-motif') */
+        width: 100px;
+    }
+}
+
+/* Quadrant Grid */
+.quad-box {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.quad-1 { top: 0; left: 0; }
+.quad-2 { top: 0; right: 0; }
+.quad-3 { bottom: 0; left: 0; }
+.quad-4 { bottom: 0; right: 0; }
+
+/* Full Image Display */
+.full-image-display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: background-image 0.5s ease;
+}
+
+/* Initial State */
+.full-image-display {
+    background-image: url('../assets/cafe-bg1.jpg');
+}
+
+/* Quadrant Content */
+.quad-content {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.quad-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--gold);
+    margin-bottom: 8px;
+}
+
+/* Hover Effects */
+.quad-1:hover ~ .full-image-display {
+    background-image: url('../assets/cafe-bg-1.jpeg');
+}
+.quad-2:hover ~ .full-image-display {
+    background-image: url('../assets/cafe-bg-2.jpeg');
+}
+.quad-3:hover ~ .full-image-display {
+    background-image: url('../assets/cafe-bg-3.jpeg');
+}
+.quad-4:hover ~ .full-image-display {
+    background-image: url('../assets/cafe-bg-4.jpeg');
+}
+
+.quad-1:hover .quad-content,
+.quad-2:hover .quad-content,
+.quad-3:hover .quad-content,
+.quad-4:hover .quad-content {
+    opacity: 1;
+}
+
+/* Maintain last hovered state */
+.quad-container:focus-within .full-image-display {
+    background-image: var(--last-image);
+}
+.quad-container:focus-within .quad-content {
+    opacity: var(--last-opacity);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .quad-container {
+        width: 90%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .quad-container {
+        height: 300px;
+    }
+    .quad-content h3 {
+        font-size: 1.4rem;
+    }
 }
 
 /* ===== About Section with Wave Animation ===== */
@@ -465,6 +621,68 @@
     font-size: 1.4rem;
     margin: 15px 0 25px;
     display: block;
+}
+
+/* ===== LUXURY MENU BUTTON EFFECT ===== */
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--gold);
+    color: var(--dark-wood);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+              rgba(255,255,255,0.2) 0%, 
+              rgba(212,175,55,0.8) 100%);
+    z-index: -1;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+    color: var(--dark-wood);
+}
+
+.btn:hover::before {
+    transform: translateY(0);
+}
+
+/* Gold shimmer effect on text */
+.btn:hover span {
+    background: linear-gradient(90deg, 
+              var(--dark-wood) 45%, 
+              #fff 50%, 
+              var(--dark-wood) 55%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+    to { background-position: 200% center; }
 }
 
 /* ===== Gallery Section ===== */

@@ -12,54 +12,86 @@
     <header>
         <div class="logo-container">
             <img src="assets/logo.png" alt="The Rameshwaram Cafe" class="logo">
-            <span class="img-text">The Rameshwaram Cafe</span>
+            <span class="brand-name">The Rameshwaram Cafe</span>
         </div>
-        <header>
-            <div class="logo-container">
-                <img src="assets/logo.png" alt="The Rameshwaram Cafe" class="logo">
-                <span class="brand-name">The Rameshwaram Cafe</span>
-            </div>
             
-            <nav class="luxury-nav">
-                <ul>
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="menu.html" class="nav-link">Menu</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-divider">|</li>
-                    <li class="dropdown">
-                        <a href="#" class="order-btn nav-link">
-                            <i class="fas fa-shopping-bag"></i> Order Online
+        <nav class="luxury-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-divider">|</li>
+                <li class="dropdown">
+                    <a href="#" class="order-btn nav-link">
+                        <i class="fas fa-shopping-bag"></i> Order Online
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="https://swiggy.com/restaurant/[ID]" target="_blank">
+                            <img src="assets/swiggy-icon.jpg" alt="Swiggy">
+                            <span>Swiggy</span>
                         </a>
-                        <div class="dropdown-menu">
-                            <a href="https://swiggy.com/restaurant/[ID]" target="_blank">
-                                <img src="assets/swiggy-icon.jpg" alt="Swiggy">
-                                <span>Swiggy</span>
-                            </a>
-                            <a href="https://zomato.com/[CITY]/[ID]/order" target="_blank">
-                                <img src="assets/zomato-icon.jpg" alt="Zomato">
-                                <span>Zomato</span>
-                            </a>
-                            <a href="https://wa.me/[PHONE]" target="_blank">
-                                <img src="assets/whatsapp-icon.jpg" alt="WhatsApp">
-                                <span>WhatsApp</span>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                        <a href="https://zomato.com/[CITY]/[ID]/order" target="_blank">
+                            <img src="assets/zomato-icon.jpg" alt="Zomato">
+                            <span>Zomato</span>
+                        </a>
+                        <a href="https://wa.me/[PHONE]" target="_blank">
+                            <img src="assets/whatsapp-icon.jpg" alt="WhatsApp">
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h3>Welcome to</h3>
-            <h1>The Rameshwaram Cafe</h1>
-            <p class="subtitle">Where Tradition Meets Excellence</p>
-            <p class="tagline">World-Class Quality Food | Exceptional Hygiene | Outstanding Service</p>
-            <a href="menu.html" class="btn">Explore Our Culinary Masterpieces</a>
+    <section class="quad-container">
+        <!-- Full image display with default image -->
+        <div class="full-image-display" style="background-image: url('assets/cafe-bg.jpeg')"></div>
+
+        <div class="welcome-overlay">
+            <h1 class="welcome-text">
+                <span class="welcome-line">Welcome to</span>
+                <span class="restaurant-name">The Rameshwaram Cafe</span>
+            </h1>
+            <div class="south-indian-motif"></div>
         </div>
+    
+
+        <!-- Quadrant 1 (Top Left) -->
+        <div class="quad-box quad-1" data-image="cafe-bg-1.jpeg" data-text="ICONIC|Explore our signature dishes">
+            <div class="quad-content">
+                <h3>ICONIC</h3>
+                <p>Explore our signature dishes</p>
+            </div>
+        </div>
+        
+        <!-- Quadrant 2 (Top Right) -->
+        <div class="quad-box quad-2" data-image="cafe-bg-2.jpeg" data-text="TRADITIONAL|Time-honored recipes">
+            <div class="quad-content">
+                <h3>TRADITIONAL</h3>
+                <p>Time-honored recipes</p>
+            </div>
+        </div>
+        
+        <!-- Quadrant 3 (Bottom Left) -->
+        <div class="quad-box quad-3" data-image="cafe-bg-3.jpeg" data-text="PURE|100% natural ingredients">
+            <div class="quad-content">
+                <h3>PURE</h3>
+                <p>100% natural ingredients</p>
+            </div>
+        </div>
+        
+        <!-- Quadrant 4 (Bottom Right) -->
+        <div class="quad-box quad-4" data-image="cafe-bg-4.jpeg" data-text="SOULFUL|Nourishing dining experience">
+            <div class="quad-content">
+                <h3>SOULFUL</h3>
+                <p>Nourishing dining experience</p>
+            </div>
+        </div>
+        
+        <!-- Full image display -->
+        <div class="full-image-display"></div>
     </section>
 
     <section class="about">
@@ -150,8 +182,7 @@
         </div>
     </section>
     
-     <!-- Footer -->
-     <footer>
+    <footer>
         <p>&copy; 2025 The Rameshwaram Cafe | Designed with ❤️</p>
     </footer>
 </body>
