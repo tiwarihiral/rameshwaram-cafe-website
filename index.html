@@ -47,11 +47,6 @@
                 <a href="contact.html" class="btn btn-outline">Reservations</a>
             </div>
         </div>
-        
-        <!-- Falling leaves -->
-        <div class="leaf" style="top: 10%; left: 5%; width: 50px; height: 50px; background-image: url('assets/leaf-decoration.png'); animation: fall 10s linear infinite;"></div>
-        <div class="leaf" style="top: 15%; left: 80%; width: 100px; height: 100px; background-image: url('assets/leaf-decoration.png'); animation: fall 15s linear infinite 2s;"></div>
-        <div class="leaf" style="top: 5%; left: 40%; width: 75px; height: 75px; background-image: url('assets/leaf-decoration.png'); animation: fall 12s linear infinite 4s;"></div>
     </section>
 
     <!-- About Section -->
@@ -104,74 +99,422 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Falling leaves -->
-        <div class="leaf" style="top: 60%; left: 10%; width: 35px; height: 35px; background-image: url('assets/images/leaf1.png'); animation: fall 14s linear infinite 1s;"></div>
-        <div class="leaf" style="top: 65%; left: 85%; width: 30px; height: 30px; background-image: url('assets/images/leaf2.png'); animation: fall 12s linear infinite 3s;"></div>
-    </section>
+        </section>
 
     <!-- Menu Section -->
-    <section class="menu" id="menu">
+<section class="menu" id="menu">
     <!-- Hidden radio buttons for category filtering -->
     <input type="radio" name="menu-filter" id="all" hidden checked>
     <input type="radio" name="menu-filter" id="snacks" hidden>
     <input type="radio" name="menu-filter" id="dosa" hidden>
+    <input type="radio" name="menu-filter" id="rotti" hidden>
+    <input type="radio" name="menu-filter" id="beverages" hidden>
+    <input type="radio" name="menu-filter" id="rice" hidden>
+    <input type="radio" name="menu-filter" id="combos" hidden>
   
     <div class="menu-header">
-      <h2 class="section-title">Our Menu</h2>
-      <p>Explore our delicious variety of snacks and dosa selections crafted to delight your taste buds.</p>
+        <h2 class="section-title">Our Menu</h2>
+        <p>Experience authentic South Indian flavors with our carefully crafted dishes available at different times of the day.</p>
     </div>
   
     <div class="menu-categories">
-      <label class="menu-category-btn" for="all">All</label>
-      <label class="menu-category-btn" for="snacks">Snacks & Sides</label>
-      <label class="menu-category-btn" for="dosa">Dosa Selections</label>
+        <label class="menu-category-btn" for="all">All</label>
+        <label class="menu-category-btn" for="snacks">Snacks & Sides</label>
+        <label class="menu-category-btn" for="dosa">Dosa Selections</label>
+        <label class="menu-category-btn" for="rotti">Rotti & Parotta</label>
+        <label class="menu-category-btn" for="beverages">Beverages</label>
+        <label class="menu-category-btn" for="rice">Rice Dishes</label>
+        <label class="menu-category-btn" for="combos">Rice Combos</label>
     </div>
   
     <div class="menu-items">
-      <!-- Snacks & Sides -->
-      <div class="menu-item" data-category="snacks">
-        <div class="menu-item-img">
-          <img src="https://via.placeholder.com/400x250?text=Idli+Sambar" alt="Idli Sambar">
+        <!-- Snacks & Sides -->
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/vada.jpeg" alt="Vada">
+            </div>
+            <div class="menu-item-content">
+                <h3>Vada (2)</h3>
+                <p>Crispy deep-fried vadas served as a pair. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
         </div>
-        <div class="menu-item-content">
-          <h3>Idli Sambar</h3>
-          <p>Soft steamed idlis served with spicy sambar and coconut chutney.</p>
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/mini-vada.jpeg" alt="Mini Vada Sambar Dip">
+            </div>
+            <div class="menu-item-content">
+                <h3>Mini Vada Sambar Dip</h3>
+                <p>Bite-sized vadas with a flavorful sambar dip. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
         </div>
-      </div>
-  
-      <div class="menu-item" data-category="snacks">
-        <div class="menu-item-img">
-          <img src="https://via.placeholder.com/400x250?text=Vada+Sambar" alt="Vada Sambar">
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/idli.jpeg" alt="Idli">
+            </div>
+            <div class="menu-item-content">
+                <h3>Idli</h3>
+                <p>Steamed, soft idlis served fresh. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
         </div>
-        <div class="menu-item-content">
-          <h3>Medu Vada</h3>
-          <p>Crispy golden vadas with tangy sambar and chutney dips.</p>
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/ghee-idli.jpeg" alt="Ghee/Butter Idli">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ghee/Butter Idli</h3>
+                <p>Idlis drizzled with rich ghee or butter. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
         </div>
-      </div>
-  
-      <!-- Dosa Selections -->
-      <div class="menu-item" data-category="dosa">
-        <div class="menu-item-img">
-          <img src="https://via.placeholder.com/400x250?text=Masala+Dosa" alt="Masala Dosa">
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/pudi-idli.jpeg" alt="Ghee Pudi Idli">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ghee Pudi Idli</h3>
+                <p>Idlis tossed in a spicy ghee pudi mix. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
         </div>
-        <div class="menu-item-content">
-          <h3>Masala Dosa</h3>
-          <p>Thin crispy dosa stuffed with spicy potato filling, served with chutneys and sambar.</p>
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/lemon-idli.jpeg" alt="Lemon Idli">
+            </div>
+            <div class="menu-item-content">
+                <h3>Lemon Idli</h3>
+                <p>Idlis with a refreshing lemon twist. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
         </div>
-      </div>
-  
-      <div class="menu-item" data-category="dosa">
-        <div class="menu-item-img">
-          <img src="https://via.placeholder.com/400x250?text=Plain+Dosa" alt="Plain Dosa">
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/button-idli.jpeg" alt="Ghee Sambar Button Idli">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ghee Sambar Button Idli</h3>
+                <p>Mini idlis served in rich, flavorful ghee sambar. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
         </div>
-        <div class="menu-item-content">
-          <h3>Plain Dosa</h3>
-          <p>Classic plain dosa, golden brown and crisp, served with sambar and chutneys.</p>
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/ven-pongal.jpeg" alt="Ven Pongal">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ven Pongal</h3>
+                <p>Savory rice-lentil dish with vegetables and spices. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
         </div>
-      </div>
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/sakkarai-pongal.jpeg" alt="Sakkarai Pongal">
+            </div>
+            <div class="menu-item-content">
+                <h3>Sakkarai Pongal</h3>
+                <p>Sweet pongal prepared with jaggery and ghee. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/khara-bhath.jpeg" alt="Khara Bhath">
+            </div>
+            <div class="menu-item-content">
+                <h3>Khara Bhath</h3>
+                <p>Spiced savory rice dish. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/kesari-bhath.jpeg" alt="Kesari Bhath">
+            </div>
+            <div class="menu-item-content">
+                <h3>Kesari Bhath</h3>
+                <p>Sweet, saffron-infused rice dish. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/pudi-khara.jpeg" alt="Ghee Pudi Khara Bhath">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ghee Pudi Khara Bhath</h3>
+                <p>Spiced rice with a kick of ghee pudi. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/poori-saagu.jpeg" alt="Poori Saagu">
+            </div>
+            <div class="menu-item-content">
+                <h3>Poori Saagu (2)</h3>
+                <p>Crispy pooris served with traditional saagu. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="snacks">
+            <div class="menu-item-img">
+                <img src="assets/dishes/gulab-jamun.jpeg" alt="Gulab Jamun">
+            </div>
+            <div class="menu-item-content">
+                <h3>Gulab Jamun</h3>
+                <p>Soft, syrup-soaked dessert. <span class="timing">6:30am – 11:30am & 4pm – 1am</span></p>
+            </div>
+        </div>
+
+        <!-- Dosa Selections -->
+        <div class="menu-item" data-category="dosa">
+            <div class="menu-item-img">
+                <img src="assets/dishes/ghee-dosa.jpeg" alt="Ghee Plain Dosa">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ghee Plain Dosa</h3>
+                <p>Plain dosa enhanced with a drizzle of ghee. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dosa">
+            <div class="menu-item-img">
+                <img src="assets/dishes/pudi-masala-dosa.jpeg" alt="Ghee Pudi Masala Dosa">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ghee Pudi Masala Dosa</h3>
+                <p>Masala dosa with a spicy ghee pudi twist. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dosa">
+            <div class="menu-item-img">
+                <img src="assets/dishes/pudi-plain-dosa.jpeg" alt="Ghee Pudi Plain Dosa">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ghee Pudi Plain Dosa</h3>
+                <p>Plain dosa tossed in ghee pudi for extra flavor. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dosa">
+            <div class="menu-item-img">
+                <img src="assets/dishes/garlic-roast.jpeg" alt="Garlic Roast Dosa">
+            </div>
+            <div class="menu-item-content">
+                <h3>Garlic Roast Dosa</h3>
+                <p>Roasted dosa with a robust garlic flavor. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dosa">
+            <div class="menu-item-img">
+                <img src="assets/dishes/open-butter.jpeg" alt="Open Butter Masala Dosa">
+            </div>
+            <div class="menu-item-content">
+                <h3>Open Butter Masala Dosa</h3>
+                <p>Dosa served with a generous open layer of butter masala. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dosa">
+            <div class="menu-item-img">
+                <img src="assets/dishes/onion-dosa.jpeg" alt="Ghee Onion Dosa">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ghee Onion Dosa (2)</h3>
+                <p>Pair of dosas with caramelized onions. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dosa">
+            <div class="menu-item-img">
+                <img src="assets/dishes/khali-dosa.jpeg" alt="Ghee Khali Dosa">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ghee Khali Dosa (2)</h3>
+                <p>Minimalist dosas served as a pair. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dosa">
+            <div class="menu-item-img">
+                <img src="assets/dishes/ragi-dosa.jpeg" alt="Ragi Dosa">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ragi Dosa</h3>
+                <p>Healthy dosa made with ragi flour. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dosa">
+            <div class="menu-item-img">
+                <img src="assets/dishes/multi-grain.jpeg" alt="Multi-Grain Dosa">
+            </div>
+            <div class="menu-item-content">
+                <h3>Multi-Grain Dosa (2)</h3>
+                <p>Dosa prepared from a mix of grains, served as a pair. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="dosa">
+            <div class="menu-item-img">
+                <img src="assets/dishes/jain-dosa.jpeg" alt="Jain Masala Dosa">
+            </div>
+            <div class="menu-item-content">
+                <h3>Jain Masala Dosa with Jain Sambar</h3>
+                <p>A Jain-friendly masala dosa paired with Jain sambar. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <!-- Rotti & Parotta -->
+        <div class="menu-item" data-category="rotti">
+            <div class="menu-item-img">
+                <img src="assets/dishes/akki-rotti.jpeg" alt="Akki Rotti">
+            </div>
+            <div class="menu-item-content">
+                <h3>Akki Rotti</h3>
+                <p>Traditional rice flour rotti, a local favorite. <span class="timing">12:00pm – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="rotti">
+            <div class="menu-item-img">
+                <img src="assets/dishes/ragi-rotti.jpeg" alt="Ragi Rotti">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ragi Rotti</h3>
+                <p>Nutritious rotti made from ragi flour. <span class="timing">12:00pm – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="rotti">
+            <div class="menu-item-img">
+                <img src="assets/dishes/kerala-parotta.jpeg" alt="Kerala Parotta">
+            </div>
+            <div class="menu-item-content">
+                <h3>Kerala Parotta</h3>
+                <p>Flaky, layered parotta with a soft interior. <span class="timing">12:00pm – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="rotti">
+            <div class="menu-item-img">
+                <img src="assets/dishes/wheat-parotta.jpeg" alt="Wheat Parotta">
+            </div>
+            <div class="menu-item-content">
+                <h3>Wheat Parotta</h3>
+                <p>Whole wheat parotta for a healthier twist. <span class="timing">12:00pm – 1:00am</span></p>
+            </div>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-item" data-category="beverages">
+            <div class="menu-item-img">
+                <img src="assets/dishes/filter-coffee.jpeg" alt="Filter Coffee">
+            </div>
+            <div class="menu-item-content">
+                <h3>Filter Coffee</h3>
+                <p>Traditional South Indian filter coffee. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="beverages">
+            <div class="menu-item-img">
+                <img src="assets/dishes/masala-tea.jpeg" alt="Masala Tea">
+            </div>
+            <div class="menu-item-content">
+                <h3>Masala Tea</h3>
+                <p>Spiced tea brewed to perfection. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="beverages">
+            <div class="menu-item-img">
+                <img src="assets/dishes/badam-milk.jpeg" alt="Badam Milk">
+            </div>
+            <div class="menu-item-content">
+                <h3>Badam Milk / Boost / Horlicks Water Bottle</h3>
+                <p>Choose your preferred nourishing beverage. <span class="timing">6:30am – 1:00am</span></p>
+            </div>
+        </div>
+
+        <!-- Rice Dishes -->
+        <div class="menu-item" data-category="rice">
+            <div class="menu-item-img">
+                <img src="assets/dishes/pudi-rice.jpeg" alt="Ghee Pudi Rice">
+            </div>
+            <div class="menu-item-content">
+                <h3>Ghee Pudi Rice</h3>
+                <p>Rice tossed with spicy ghee pudi. <span class="timing">12:00pm – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+            <div class="menu-item-img">
+                <img src="assets/dishes/gongura-rice.jpeg" alt="Gongura Rice">
+            </div>
+            <div class="menu-item-content">
+                <h3>Gongura Rice</h3>
+                <p>Tangy rice flavored with gongura leaves. <span class="timing">12:00pm – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+            <div class="menu-item-img">
+                <img src="assets/dishes/tomato-rice.jpeg" alt="Tomato Rice">
+            </div>
+            <div class="menu-item-content">
+                <h3>Tomato Rice</h3>
+                <p>Rice cooked with fresh tomatoes and spices. <span class="timing">12:00pm – 1:00am</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+            <div class="menu-item-img">
+                <img src="assets/dishes/lemon-rice.jpeg" alt="Lemon Rice">
+            </div>
+            <div class="menu-item-content">
+                <h3>Lemon Rice</h3>
+                <p>Rice seasoned with lemon juice and mustard seeds. <span class="timing">12:00pm – 1:00am</span></p>
+            </div>
+        </div>
+
+        <!-- Rice Combos -->
+        <div class="menu-item" data-category="combos">
+            <div class="menu-item-img">
+                <img src="assets/dishes/puliyogare.jpeg" alt="Puliyogare">
+            </div>
+            <div class="menu-item-content">
+                <h3>Puliyogare</h3>
+                <p>Tangy tamarind rice bursting with flavor. <span class="timing">12:00pm – 3:00pm</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="combos">
+            <div class="menu-item-img">
+                <img src="assets/dishes/bisi-bele.jpeg" alt="Bisi Bele Bhath">
+            </div>
+            <div class="menu-item-content">
+                <h3>Bisi Bele Bhath & Raitha Curd Rice</h3>
+                <p>Hearty rice dish served with cooling raita curd. <span class="timing">12:00pm – 3:00pm</span></p>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="combos">
+            <div class="menu-item-img">
+                <img src="assets/dishes/rice-combo.jpeg" alt="Rice Combo">
+            </div>
+            <div class="menu-item-content">
+                <h3>Rice Combo (Choose 2)</h3>
+                <p>Mix and match two of our delectable rice options. <span class="timing">12:00pm – 3:00pm</span></p>
+            </div>
+        </div>
     </div>
-    </section>  
+</section>  
       
 
     <!-- Testimonials Section -->
@@ -189,6 +532,45 @@
             </div>
         </div>
     </section>
+
+    <!-- Branches Section -->
+<section class="branches">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Branches</h2>
+            <p>Visit us at any of our convenient locations across Bangalore</p>
+        </div>
+        <div class="branches-grid">
+            <div class="branch-card">
+                <div class="branch-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="branch-info">
+                    <h3>Indiranagar</h3>
+                    <p>2984, 12TH MAIN, HAL 2ND STAGE, INDIRANAGAR, BANGALORE- 560008</p>
+                </div>
+            </div>
+            <div class="branch-card">
+                <div class="branch-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="branch-info">
+                    <h3>JP Nagar</h3>
+                    <p>52, OUTER RING ROAD, J P NAGAR 2ND PHASE, BENGALURU, KARNATAKA - 560076</p>
+                </div>
+            </div>
+            <div class="branch-card">
+                <div class="branch-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="branch-info">
+                    <h3>Brookefield</h3>
+                    <p>1, GREEN AVENUE, ITPL ROAD, BROOKEFIELD, BENGALURU, KARNATAKA - 560037</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Gallery Section -->
     <section class="gallery" id="gallery">
@@ -264,7 +646,7 @@
                         <i class="fas fa-clock"></i>
                         <div>
                             <h4>Opening Hours</h4>
-                            <p>Monday - Sunday: 7:00 AM - 11:00 PM</p>
+                            <p>Monday - Sunday<br>6:30 AM - 11:30 AM & 4:00 PM - 1:00 AM</p>
                         </div>
                     </div>
                 </div>
@@ -314,11 +696,11 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="menu.html">Our Menu</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#index">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -332,11 +714,9 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2022 Rameshwaram Cafe. All Rights Reserved.</p>
+                <p>&copy; 2022 The Rameshwaram Cafe. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
