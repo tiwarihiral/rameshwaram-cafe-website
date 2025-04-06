@@ -3,187 +3,340 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Rameshwaram Cafe | Luxury South Indian Dining</title>
+    <title>Rameshwaram Cafe - Authentic South Indian Cuisine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="assets/logo.png" alt="The Rameshwaram Cafe" class="logo">
-            <span class="brand-name">The Rameshwaram Cafe</span>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <img class="logo-img" src="assets/logo.png" alt="Rameshwaram Cafe Logo">
+                <a class="logo">Rameshwaram<span>Cafe</span></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li class="btn"><a href="#home">Home</a></li>
+                    <li class="btn"><a href="#about">About</a></li>
+                    <li class="btn"><a href="#menu">Menu</a></li>
+                    <li class="btn"><a href="#gallery">Gallery</a></li>
+                    <li class="btn"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-            
-        <nav class="luxury-nav">
-            <ul>
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="menu.html" class="nav-link">Menu</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li class="nav-divider">|</li>
-                <li class="dropdown">
-                    <a href="#" class="order-btn nav-link">
-                        <i class="fas fa-shopping-bag"></i> Order Online
-                    </a>
-                    <div class="dropdown-menu">
-                        <a href="https://swiggy.com/restaurant/[ID]" target="_blank">
-                            <img src="assets/swiggy-icon.jpg" alt="Swiggy">
-                            <span>Swiggy</span>
-                        </a>
-                        <a href="https://zomato.com/[CITY]/[ID]/order" target="_blank">
-                            <img src="assets/zomato-icon.jpg" alt="Zomato">
-                            <span>Zomato</span>
-                        </a>
-                        <a href="https://wa.me/[PHONE]" target="_blank">
-                            <img src="assets/whatsapp-icon.jpg" alt="WhatsApp">
-                            <span>WhatsApp</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
     </header>
 
-    <section class="quad-container">
-        <!-- Full image display with default image -->
-        <div class="full-image-display" style="background-image: url('assets/cafe-bg.jpeg')"></div>
-
-        <div class="welcome-overlay">
-            <h1 class="welcome-text">
-                <span class="welcome-line">Welcome to</span>
-                <span class="restaurant-name">The Rameshwaram Cafe</span>
-            </h1>
-            <div class="south-indian-motif"></div>
-        </div>
-    
-
-        <!-- Quadrant 1 (Top Left) -->
-        <div class="quad-box quad-1" data-image="cafe-bg-1.jpeg" data-text="ICONIC|Explore our signature dishes">
-            <div class="quad-content">
-                <h3>ICONIC</h3>
-                <p>Explore our signature dishes</p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <video autoplay muted loop class="hero-video">
+            <source src="assets/videos/hero-video.mp4" type="video/mp4">
+            <!-- Fallback image if video doesn't load -->
+            <img src="assets/south-indian-bg.jpeg" alt="Rameshwaram Cafe">
+        </video>
+        <div class="container hero-content">
+            <h1>Authentic South Indian Cuisine</h1>
+            <p>Experience the rich flavors of traditional South India with our world-class quality food, prepared with complete hygiene, no chemicals, and no preservatives.</p>
+            <div class="hero-btns">
+                <a href="menu.html" class="btn">Explore Menu</a>
+                <a href="contact.html" class="btn btn-outline">Reservations</a>
             </div>
         </div>
         
-        <!-- Quadrant 2 (Top Right) -->
-        <div class="quad-box quad-2" data-image="cafe-bg-2.jpeg" data-text="TRADITIONAL|Time-honored recipes">
-            <div class="quad-content">
-                <h3>TRADITIONAL</h3>
-                <p>Time-honored recipes</p>
-            </div>
-        </div>
-        
-        <!-- Quadrant 3 (Bottom Left) -->
-        <div class="quad-box quad-3" data-image="cafe-bg-3.jpeg" data-text="PURE|100% natural ingredients">
-            <div class="quad-content">
-                <h3>PURE</h3>
-                <p>100% natural ingredients</p>
-            </div>
-        </div>
-        
-        <!-- Quadrant 4 (Bottom Right) -->
-        <div class="quad-box quad-4" data-image="cafe-bg-4.jpeg" data-text="SOULFUL|Nourishing dining experience">
-            <div class="quad-content">
-                <h3>SOULFUL</h3>
-                <p>Nourishing dining experience</p>
-            </div>
-        </div>
-        
-        <!-- Full image display -->
-        <div class="full-image-display"></div>
+        <!-- Falling leaves -->
+        <div class="leaf" style="top: 10%; left: 5%; width: 50px; height: 50px; background-image: url('assets/leaf-decoration.png'); animation: fall 10s linear infinite;"></div>
+        <div class="leaf" style="top: 15%; left: 80%; width: 100px; height: 100px; background-image: url('assets/leaf-decoration.png'); animation: fall 15s linear infinite 2s;"></div>
+        <div class="leaf" style="top: 5%; left: 40%; width: 75px; height: 75px; background-image: url('assets/leaf-decoration.png'); animation: fall 12s linear infinite 4s;"></div>
     </section>
 
-    <section class="about">
-        <div class="about-content">
-            <!-- Wave of falling leaves -->
-            <div class="leaf-wave">
-                <div class="leaf" style="--delay: 0s; --x-pos: 10%;"></div>
-                <div class="leaf" style="--delay: 0.5s; --x-pos: 20%;"></div>
-                <div class="leaf" style="--delay: 1s; --x-pos: 30%;"></div>
-                <div class="leaf" style="--delay: 1.5s; --x-pos: 40%;"></div>
-                <div class="leaf" style="--delay: 2s; --x-pos: 60%;"></div>
-                <div class="leaf" style="--delay: 2.5s; --x-pos: 70%;"></div>
-                <div class="leaf" style="--delay: 3s; --x-pos: 80%;"></div>
-                <div class="leaf" style="--delay: 3.5s; --x-pos: 90%;"></div>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-img">
+                <img src="assets/about-interior.jpeg" alt="Rameshwaram Cafe Interior">
             </div>
-            
-            <div class="about-text">
-                <h2>Experience South Indian Luxury</h2>
-                <p>Indulge in the finest South Indian cuisine crafted by our award-winning chefs...</p>
-            </div>
-            
-            <div class="chef-container">
-                <img src="assets/chef.png" alt="Master Chef" class="floating">
-            </div>
-        </div>
-    </section>
-    
-    <section class="menu-preview">
-        <h2>Our Signature Creations</h2>
-        <div class="menu-items">
-            <div class="item">
-                <div class="item-image">
-                    <img src="assets/dosa.jpeg" alt="Signature Masala Dosa">
-                    <div class="premium-badge">Chef's Special</div>
+            <div class="about-content">
+                <h2 class="section-title">Our Story</h2>
+                <p>Founded with a passion for authentic South Indian flavors, Rameshwaram Cafe brings you the finest culinary traditions from the heart of South India. Our chefs craft each dish with precision, using only the freshest ingredients and traditional methods.</p>
+                <p>We take pride in our commitment to hygiene and quality. Our kitchen follows strict cleanliness protocols, and we never use chemicals or preservatives in our food preparation.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>World Class Quality</h4>
+                            <p>Only the finest ingredients selected for authentic taste</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Complete Hygiene</h4>
+                            <p>Stringent cleanliness standards in all our processes</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Quick Service</h4>
+                            <p>Efficient service without compromising on quality</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Natural Ingredients</h4>
+                            <p>No chemicals or preservatives in any of our dishes</p>
+                        </div>
+                    </div>
                 </div>
-                <h3>Signature Masala Dosa</h3>
-                <p class="item-desc">Golden crisp crepe filled with spiced potatoes, served with sambar and chutneys</p>
-                <p class="price">₹399</p>
-            </div>
-            <div class="item">
-                <div class="item-image">
-                    <img src="assets/idli.jpeg" alt="Premium Idli Vada">
-                    <div class="premium-badge">House Favorite</div>
-                </div>
-                <h3>Premium Idli Vada</h3>
-                <p class="item-desc">Fluffy rice cakes with crispy lentil doughnuts, served with coconut chutney</p>
-                <p class="price">₹349</p>
-            </div>
-            <div class="item">
-                <div class="item-image">
-                    <img src="assets/filter-coffee.jpeg" alt="Traditional Filter Coffee">
-                    <div class="premium-badge">Iconic</div>
-                </div>
-                <h3>Traditional Filter Coffee</h3>
-                <p class="item-desc">Aromatic South Indian coffee served in traditional davara-tumbler</p>
-                <p class="price">₹199</p>
             </div>
         </div>
-        <a href="menu.html" class="btn">View Our Exquisite Menu</a>
+        
+        <!-- Falling leaves -->
+        <div class="leaf" style="top: 60%; left: 10%; width: 35px; height: 35px; background-image: url('assets/images/leaf1.png'); animation: fall 14s linear infinite 1s;"></div>
+        <div class="leaf" style="top: 65%; left: 85%; width: 30px; height: 30px; background-image: url('assets/images/leaf2.png'); animation: fall 12s linear infinite 3s;"></div>
     </section>
 
-    <section class="gallery">
-        <h2>Our Culinary Gallery</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item"><img src="assets/gallery1.jpeg" alt="Food Presentation"></div>
-            <div class="gallery-item"><img src="assets/gallery2.jpeg" alt="Dining Area"></div>
-            <div class="gallery-item"><img src="assets/gallery3.jpeg" alt="Chef Preparing Food"></div>
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+    <!-- Hidden radio buttons for category filtering -->
+    <input type="radio" name="menu-filter" id="all" hidden checked>
+    <input type="radio" name="menu-filter" id="snacks" hidden>
+    <input type="radio" name="menu-filter" id="dosa" hidden>
+  
+    <div class="menu-header">
+      <h2 class="section-title">Our Menu</h2>
+      <p>Explore our delicious variety of snacks and dosa selections crafted to delight your taste buds.</p>
+    </div>
+  
+    <div class="menu-categories">
+      <label class="menu-category-btn" for="all">All</label>
+      <label class="menu-category-btn" for="snacks">Snacks & Sides</label>
+      <label class="menu-category-btn" for="dosa">Dosa Selections</label>
+    </div>
+  
+    <div class="menu-items">
+      <!-- Snacks & Sides -->
+      <div class="menu-item" data-category="snacks">
+        <div class="menu-item-img">
+          <img src="https://via.placeholder.com/400x250?text=Idli+Sambar" alt="Idli Sambar">
+        </div>
+        <div class="menu-item-content">
+          <h3>Idli Sambar</h3>
+          <p>Soft steamed idlis served with spicy sambar and coconut chutney.</p>
+        </div>
+      </div>
+  
+      <div class="menu-item" data-category="snacks">
+        <div class="menu-item-img">
+          <img src="https://via.placeholder.com/400x250?text=Vada+Sambar" alt="Vada Sambar">
+        </div>
+        <div class="menu-item-content">
+          <h3>Medu Vada</h3>
+          <p>Crispy golden vadas with tangy sambar and chutney dips.</p>
+        </div>
+      </div>
+  
+      <!-- Dosa Selections -->
+      <div class="menu-item" data-category="dosa">
+        <div class="menu-item-img">
+          <img src="https://via.placeholder.com/400x250?text=Masala+Dosa" alt="Masala Dosa">
+        </div>
+        <div class="menu-item-content">
+          <h3>Masala Dosa</h3>
+          <p>Thin crispy dosa stuffed with spicy potato filling, served with chutneys and sambar.</p>
+        </div>
+      </div>
+  
+      <div class="menu-item" data-category="dosa">
+        <div class="menu-item-img">
+          <img src="https://via.placeholder.com/400x250?text=Plain+Dosa" alt="Plain Dosa">
+        </div>
+        <div class="menu-item-content">
+          <h3>Plain Dosa</h3>
+          <p>Classic plain dosa, golden brown and crisp, served with sambar and chutneys.</p>
+        </div>
+      </div>
+    </div>
+    </section>  
+      
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <p>"The best South Indian food I've had in India! The flavors are authentic and the hygiene standards are impeccable. The masala dosa is to die for!"</p>
+                    <h4>Rajesh Kumar</h4>
+                    <span>Food Critic</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="contact">
-        <div class="contact-container">
-            <h2>Experience Our Hospitality</h2>
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="gallery-header">
+                <h2 class="section-title">Our Gallery</h2>
+                <p>A visual journey through our culinary excellence and inviting ambiance.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/interior.jpeg" alt="Rameshwaram Cafe Interior">
+                    <div class="gallery-item-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/dosa.jpeg" alt="Dosa Preparation">
+                    <div class="gallery-item-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/idli-vada.jpeg" alt="Idli Vada">
+                    <div class="gallery-item-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/filter-coffee.jpeg" alt="Filter Coffee">
+                    <div class="gallery-item-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/chef.jpeg" alt="Chef Preparing Food">
+                    <div class="gallery-item-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/thali.jpeg" alt="Traditional Thali">
+                    <div class="gallery-item-overlay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container contact-container">
             <div class="contact-info">
-                <div class="info-item">
-                    <i class="icon">📍</i>
-                    <p>119, 12TH B CROSS, 19TH MAIN, J P NAGAR 2ND PHASE, BANGALORE,<br> KARNATAKA - 560078, India</p>
+                <h3>Visit Us</h3>
+                <p>Experience the authentic flavors of South India at our conveniently located cafe. We welcome you to enjoy our warm hospitality and exquisite cuisine.</p>
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>119, 12TH B CROSS, 19TH MAIN, J P NAGAR 2ND PHASE, BANGALORE, KARNATAKA - 560078</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8151999191</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@rameshwaramcafe.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Sunday: 7:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <i class="icon">📞</i>
-                    <p>+91 8151999191</p>
-                </div>
-                <div class="info-item">
-                    <i class="icon">🕒</i>
-                    <p>Monday - Sunday<br>6:30 AM - 11:30 AM <br> & <br> 4:00 PM to 1:00 AM</p>
-                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Enquiries</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
-    
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 The Rameshwaram Cafe | Designed with ❤️</p>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>The Rameshwaram Cafe</h4>
+                    <p>Bringing authentic South Indian flavors to your plate with world-class quality, complete hygiene, and quick service.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/therameshwaramcafe/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/therameshwaramcafe/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/RameshwaramCafe"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Commitment</h4>
+                    <ul class="footer-links">
+                        <li><a>Hygiene Standards</a></li>
+                        <li><a>Quality Ingredients</a></li>
+                        <li><a>Traditional Recipes</a></li>
+                        <li><a>Customer Satisfaction</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022 Rameshwaram Cafe. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
