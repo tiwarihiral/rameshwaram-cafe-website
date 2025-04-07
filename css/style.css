@@ -1,10 +1,10 @@
 /* Global Styles */
 :root {
-    --primary: #1a1a2e;
-    --secondary: #16213e;
-    --accent: #e6af2e;
-    --text: #f1f1f1;
-    --text-secondary: #cccccc;
+    --primary: #121212;
+    --secondary: #1a1a1a;
+    --accent: #d4af37;
+    --text: #e0e0e0;
+    --text-secondary: #a0a0a0;
     --font-main: 'Playfair Display', serif;
     --font-secondary: 'Poppins', sans-serif;
 }
