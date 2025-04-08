@@ -10,25 +10,28 @@
 </head>
 <body>
     <!-- Header -->
-    <header id="header">
-        <div class="container header-container">
+    <header class="header">
+        <div class="header-container">
             <div class="logo-container">
-                <img class="logo-img" src="assets/logo.png" alt="Rameshwaram Cafe Logo">
-                <a class="logo">Rameshwaram<span>Cafe</span></a>
+                <img src="assets/logo.png" alt="Rameshwaram Cafe" class="logo-img">
+                <div class="logo-text">
+                    <h1 class="logo-main">Rameshwaram</h1>
+                    <p class="logo-sub">Cafe</p>
+                </div>
             </div>
-            
-            <label for="mobile-menu-toggle" class="mobile-menu-btn">
+    
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">
                 <i class="fas fa-bars"></i>
             </label>
-            <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
-            
-            <nav id="nav">
-                <ul>
-                    <li class="btn"><a href="#home">Home</a></li>
-                    <li class="btn"><a href="#about">About</a></li>
-                    <li class="btn"><a href="#menu">Menu</a></li>
-                    <li class="btn"><a href="#gallery">Gallery</a></li>
-                    <li class="btn"><a href="#contact">Contact</a></li>
+    
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
