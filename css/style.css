@@ -207,7 +207,7 @@ a {
     }
 
     #menu-toggle:checked ~ .nav {
-        max-height: 500px; /* Adjust based on your content */
+        max-height: 500px;
     }
 
     .nav-list {
