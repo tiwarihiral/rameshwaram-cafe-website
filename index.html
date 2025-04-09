@@ -10,32 +10,33 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="header-container">
+    <header id="header">
+        <div class="container header-container">
             <div class="logo-container">
-                <img src="assets/logo.png" alt="Rameshwaram Cafe" class="logo-img">
-                <div class="logo-text">
-                    <h1 class="logo-main">Rameshwaram</h1>
-                    <p class="logo-sub">Cafe</p>
-                </div>
+                <img class="logo-img" src="assets/logo.png" alt="Rameshwaram Cafe Logo">
+                <a class="logo">Rameshwaram<span>Cafe</span></a>
             </div>
     
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-btn">
+            <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+            
+            <label for="mobile-menu-toggle" class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </label>
     
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#menu" class="nav-link">Menu</a></li>
-                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+            <!-- Add this overlay to close menu when clicked -->
+            <label for="mobile-menu-toggle" class="nav-overlay"></label>
+    
+            <nav id="nav">
+                <ul>
+                    <li class="btn"><label for="mobile-menu-toggle"><a href="#home">Home</a></label></li>
+                    <li class="btn"><label for="mobile-menu-toggle"><a href="#about">About</a></label></li>
+                    <li class="btn"><label for="mobile-menu-toggle"><a href="#menu">Menu</a></label></li>
+                    <li class="btn"><label for="mobile-menu-toggle"><a href="#gallery">Gallery</a></label></li>
+                    <li class="btn"><label for="mobile-menu-toggle"><a href="#contact">Contact</a></label></li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </header>    
 
     <!-- Hero Section -->
     <section class="hero" id="home">
