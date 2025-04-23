@@ -120,7 +120,7 @@ header.scrolled {
     font-size: 2rem;
     font-weight: 700;
     color: var(--accent);
-    margin-left: 0; /* Remove any default margin */
+    margin-left: 0;
 }
 
 .logo span {
@@ -163,7 +163,7 @@ nav ul li a:hover:after {
     width: 100%;
 }
 
-/* Mobile Menu Styles - Right Side Animation */
+/* Mobile Menu Styles*/
 .mobile-menu-toggle {
     display: none;
 }
